@@ -6,6 +6,9 @@ import { Title, linkItems } from './logo';
 import { IconContainer } from './lucide-icons';
 import TailwindIndicator from './tailwind-indicator';
 
+export * from './card';
+export * from './badge';
+
 export {
   TailwindIndicator,
   IconContainer,
