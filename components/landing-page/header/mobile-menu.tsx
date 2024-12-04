@@ -5,8 +5,22 @@ import { useTheme } from 'next-themes';
 import Link from 'next/link';
 import { LogIn, LogOut, Menu, Settings, SquareArrowRight } from 'lucide-react';
 import { MoonStar, Sun } from 'lucide-react';
-import { Button } from '@/components/landing-page/ui/button';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger, Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, Avatar, AvatarFallback, AvatarImage } from '@/components/ui';
+
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+  Button
+} from '@/components/ui';
 
 type Props = {
   user: any | null;

@@ -3,8 +3,7 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ChevronRight as ChevronRightIcon } from 'lucide-react';
-import { GridIllustrationBackgroundImage } from '@/components/ui';
-import { Button } from '../ui/button';
+import { GridIllustrationBackgroundImage, Button } from '@/components/ui';
 import ExpandableCards from '../ui/expandable-cards';
 import IntegrationBox from '../ui/integration-box';
 

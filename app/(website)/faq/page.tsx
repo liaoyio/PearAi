@@ -4,9 +4,9 @@ import {
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
-} from '@/components/ui/accordion';
+  ClientOnly
+} from '@/components/ui';
 import { createMetadata } from '@/utils/metadata';
-import { ClientOnly } from '@/components/ui';
 
 export const metadata = createMetadata({
   title: 'FAQ | PearAi',

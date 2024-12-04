@@ -1,8 +1,7 @@
 import Link from 'next/link';
 import { FOOTER_SECTIONS, SOCIAL_MEDIA_LINKS } from '@/utils/constants';
 import { PearDark } from '@/assets/icons';
-import { Button } from './ui/button';
-import { ClientOnly } from '@/components/ui';
+import { ClientOnly, Button } from '@/components/ui';
 
 export default function Footer() {
   return (

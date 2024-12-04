@@ -1,6 +1,5 @@
 import { FC } from 'react';
 import { Card, CardContent, CardDescription, Badge } from '@/components/ui';
-import '@/components/ui/card';
 import { createMetadata } from '@/utils/metadata';
 
 export const metadata = createMetadata({

@@ -19,12 +19,13 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
+  Button
 } from '@/components/ui';
 import { cn } from '@/utils/cn';
 import { Apple, Windows, Linux } from '@/assets/icons';
 import { useCheckout } from '@/hooks/useCheckout';
 import { PricingTierProps } from '@/types/pricing';
-import { Button } from '../ui/button';
+
 import PearCreditsTooltip from './tooltip';
 
 interface ExtendedPricingTierProps extends PricingTierProps {

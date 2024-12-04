@@ -5,8 +5,7 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
 import { cn } from '@/utils/cn';
-import { Button } from '../ui/button';
-import { ClientOnly } from '@/components/ui';
+import { ClientOnly, Button } from '@/components/ui';
 
 const testimonials = [
   {
