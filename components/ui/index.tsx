@@ -8,6 +8,7 @@ import TailwindIndicator from './tailwind-indicator';
 
 export * from './card';
 export * from './badge';
+export * from './accordion';
 
 export {
   TailwindIndicator,
