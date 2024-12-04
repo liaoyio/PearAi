@@ -1,4 +1,4 @@
-import { DocsBackgroundImage } from '@/components/ui/background';
+import { DocsBackgroundImage, GridIllustrationBackgroundImage } from '@/components/ui/background';
 import { buttonVariants } from './button';
 import ClientOnly from './client-only';
 import { CodeBlock } from './code-block';
@@ -15,4 +15,5 @@ export {
   linkItems,
   ClientOnly,
   DocsBackgroundImage,
+  GridIllustrationBackgroundImage,
 };

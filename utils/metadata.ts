@@ -1,5 +1,5 @@
 import type { Metadata } from 'next/types';
-import { DefaultMetadata } from '@/utils/consts';
+import { DefaultMetadata } from '@/utils/constants';
 
 export type MetadataProps = Metadata & {
   title?: string;
