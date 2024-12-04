@@ -1,10 +1,10 @@
 import type { Metadata } from 'next/types';
 import { DefaultMetadata } from '@/utils/consts';
 
-type MetadataProps = Metadata & {
+export type MetadataProps = Metadata & {
   title?: string;
   description?: string;
-  canonical: string;
+  canonical?: string;
   ogImage?: string;
 };
 
