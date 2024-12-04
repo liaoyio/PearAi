@@ -40,6 +40,22 @@ export const signin_schema = z.object({
   password: password_schema.shape.password,
 });
 
+export const reset_password_schema = z.object({
+  email: email_schema.shape.email,
+});
+
+export const update_password_schema = z
+  .object({
+    password: password_schema.shape.password,
+    confirmPassword: password_schema.shape.password,
+  })
+  .refine((data) => data.password === data.confirmPassword, {
+    message: "Passwords don't match",
+    path: ["confirmPassword"],
+  });
+
 
 export type SignUpFormData = z.infer<typeof signup_schema>;
 export type SignInFormData = z.infer<typeof signin_schema>;
+export type ResetPasswordFormData = z.infer<typeof reset_password_schema>;
+export type UpdatePasswordFormData = z.infer<typeof update_password_schema>;
