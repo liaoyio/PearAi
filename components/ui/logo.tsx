@@ -63,7 +63,7 @@ export const linkItems: LinkItemType[] = [
   },
   {
     // type: 'icon',
-    url: 'https://github.com/fuma-nama/fumadocs',
+    url: 'https://github.com/trypear/pearai-master',
     text: 'Github',
     icon: <Github />,
     active: 'url',
