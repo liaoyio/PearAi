@@ -7,7 +7,7 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
 import { TypeTable } from 'fumadocs-ui/components/type-table';
 import defaultComponents from 'fumadocs-ui/mdx';
 import { DocsPage, DocsBody, DocsTitle, DocsDescription } from 'fumadocs-ui/page';
-import { AutoTypeTable } from '@/components/ui';
+import { AutoTypeTable } from '@/components/ui/type-table';
 import { createMetadata, MetadataProps } from '@/utils/metadata';
 import { metadataImage } from '@/utils/services/metadata-image';
 import { source } from '@/utils/source';
