@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
-// import SignUpComponent from "@/components/auth/signup";
 import { Fragment } from "react";
 import { createMetadata } from "@/utils/metadata";
+import SignUp from "@/components/auth/signup";
 
 export const metadata = createMetadata({
   title: "Sign Up",
@@ -9,14 +9,10 @@ export const metadata = createMetadata({
   canonical: "/signup",
 });
 
-export default async function SignUp() {
+export default async function SignUpPage() {
   // const supabase = createClient();
   // const { data } = await supabase.auth.getUser();
   // if (data?.user) redirect("/");
-  return (
-    <Fragment>
-      {/* <SignUpComponent /> */}
-      SignUpComponent
-    </Fragment>
-  );
+  return <SignUp />
+
 }

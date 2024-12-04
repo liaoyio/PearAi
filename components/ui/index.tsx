@@ -16,6 +16,9 @@ export * from './navigation-menu';
 export * from './sheet';
 export * from './avatar';
 export * from './background';
+export * from './input';
+export * from './label';
+export * from './checkbox';
 
 export {
   TailwindIndicator,
