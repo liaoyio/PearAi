@@ -13,6 +13,9 @@ export * from './accordion';
 export * from './dropdown-menu';
 export * from './tooltip';
 export * from './tabs';
+export * from './navigation-menu';
+export * from './sheet';
+export * from './avatar';
 
 export {
   TailwindIndicator,
