@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import Link from 'next/link';
+import { ClientOnly } from '@/components/ui';
 
 type ChangelogEntry = {
   date: string;
@@ -19,14 +20,16 @@ export const changelog_list: ChangelogEntry[] = [
         <h2 className="mt-6 text-lg font-medium">Fixes</h2>
         <ul className="mt-2 list-disc space-y-3 ps-6 text-lg">
           <li>
-            <Link
-              href="https://x.com/trypearai/status/1843336384322601366"
-              className="text-primary-600 hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Added open source fixes
-            </Link>
+            <ClientOnly>
+              <Link
+                href="https://x.com/trypearai/status/1843336384322601366"
+                className="text-primary-600 hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Added open source fixes
+              </Link>
+            </ClientOnly>
           </li>
         </ul>
       </>
@@ -42,10 +45,12 @@ export const changelog_list: ChangelogEntry[] = [
         <h2 className="mt-6 text-lg font-medium">Features 🎉</h2>
 
         <ul className="mt-2 list-disc space-y-3 ps-6">
-          <li className="">
+          <li>
+
             <Link href="/blog/gpt-o1" className="text-primary-600 hover:underline">
               Introduced GPT-o1 support &nbsp;
             </Link>
+
             for annual subscription members
           </li>
           <li className="">File Creation ✏️</li>
@@ -113,14 +118,17 @@ export const changelog_list: ChangelogEntry[] = [
     description: (
       <ul className="list-disc space-y-3 ps-6">
         <li>
-          <Link
-            href="https://github.com/trypear/pearai-submodule/pull/137"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline-offset-4 hover:underline"
-          >
-            Huge refactor
-          </Link>
+          <ClientOnly>
+            <Link
+              href="https://github.com/trypear/pearai-submodule/pull/137"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline-offset-4 hover:underline"
+            >
+              Huge refactor
+            </Link>
+          </ClientOnly>
+
           & Performance improvements
         </li>
         <li>Added Mistral AI support</li>

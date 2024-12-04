@@ -8,8 +8,10 @@ import { createMetadata } from '@/utils/metadata';
 import '@/styles/global.css';
 import { Body } from './layout.client';
 
+
 export const metadata = createMetadata({
   canonical: '/',
+  icons: '/favicon.ico'
 });
 
 export const viewport: Viewport = {

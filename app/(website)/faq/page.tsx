@@ -6,6 +6,7 @@ import {
   AccordionContent,
 } from '@/components/ui/accordion';
 import { createMetadata } from '@/utils/metadata';
+import { ClientOnly } from '@/components/ui';
 
 export const metadata = createMetadata({
   title: 'FAQ | PearAi',
@@ -135,13 +136,16 @@ const faqData: FAQItem[] = [
     answer: (
       <p>
         No. All codebase indexing occurs and remains strictly local on your machine (
-        <Link
-          target="_blank"
-          className="underline underline-offset-4"
-          href="https://github.com/trypear/pearai-submodule/tree/main/core/indexing"
-        >
-          source
-        </Link>
+        <ClientOnly>
+          <Link
+            target="_blank"
+            className="underline underline-offset-4"
+            href="https://github.com/trypear/pearai-submodule/tree/main/core/indexing"
+          >
+            source
+          </Link>
+        </ClientOnly>
+
         ). Our servers never store any of your code. Additionally, we maintain a zero-data retention
         policy with our primary LLM cloud provider, Anthropic, ensuring they also neither store nor
         train on your code.

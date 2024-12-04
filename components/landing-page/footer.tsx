@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { FOOTER_SECTIONS, SOCIAL_MEDIA_LINKS } from '@/utils/constants';
 import { PearDark } from '@/assets/icons';
 import { Button } from './ui/button';
+import { ClientOnly } from '@/components/ui';
 
 export default function Footer() {
   return (
@@ -22,13 +23,15 @@ export default function Footer() {
           <div key={idx}>
             <h5 className="font-semibold">{title}</h5>
             <ul className="mt-4 space-y-2 text-neutral-500 dark:text-neutral-400">
-              {links.map(({ text, href, target = '_self' }, idx) => (
-                <li key={idx}>
-                  <Link href={href} target={target} className="hover:text-primary-600 text-sm">
-                    {text}
-                  </Link>
-                </li>
-              ))}
+              <ClientOnly>
+                {links.map(({ text, href }, idx) => (
+                  <li key={idx}>
+                    <Link href={href} target="_self" className="hover:text-primary-600 text-sm">
+                      {text}
+                    </Link>
+                  </li>
+                ))}
+              </ClientOnly>
             </ul>
           </div>
         ))}

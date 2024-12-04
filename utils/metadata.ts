@@ -19,6 +19,7 @@ export function createMetadata({
     metadataBase: new URL('https://trypear.ai/'),
     title: title ? `${title} - PearAI` : DefaultMetadata.TITLE,
     description,
+
     keywords: ['code editor', 'ai code editor', 'ai', 'pearai', 'open source code editor'],
     alternates: {
       canonical,

@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
 import { cn } from '@/utils/cn';
 import { Button } from '../ui/button';
+import { ClientOnly } from '@/components/ui';
 
 const testimonials = [
   {
@@ -142,12 +143,14 @@ export default function Showcase() {
               Download
             </Link>
           </Button>
-          <a
-            href="https://trypear.ai/docs/contributors"
-            className="mt-2 text-xs font-medium text-black underline decoration-dashed underline-offset-1 hover:decoration-black/20 dark:text-black"
-          >
-            Interested in contributing ?
-          </a>
+          <ClientOnly>
+            <Link
+              href="https://trypear.ai/docs/contributors"
+              className="mt-2 text-xs font-medium text-black underline decoration-dashed underline-offset-1 hover:decoration-black/20 dark:text-black"
+            >
+              Interested in contributing ?
+            </Link>
+          </ClientOnly>
         </div>
       </div>
     </>
